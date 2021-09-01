@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "plugins": ["react","prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "moduleDirectory": ["node_modules", "src/"]
+          }
+        }
+    }
+}
